@@ -1,0 +1,142 @@
+@use "../../app/styles/variables" as *;
+
+.page {
+  min-height: 100vh;
+  background: $color-bg;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: $color-text-primary;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.sidebar {
+  background: $color-white;
+  border-radius: $radius-card;
+  padding: 24px;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menuItem {
+  padding-bottom: 12px;
+  border-bottom: 1px solid $color-border;
+  font-size: 14px;
+  color: $color-text-muted;
+}
+
+.menuItemActive {
+  color: $color-text-primary;
+}
+
+.content {
+  background: $color-white;
+  border-radius: $radius-card;
+  padding: 32px;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: $color-text-primary;
+}
+
+.divider {
+  height: 1px;
+  background: $color-border;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $color-text-primary;
+}
+
+.input {
+  height: 48px;
+  border-radius: $radius-input;
+  border: 1px solid $color-border;
+  padding: 0 16px;
+  background: $color-white;
+  color: $color-text-primary;
+  outline: none;
+}
+
+.input:focus {
+  border-color: $color-accent;
+}
+
+.error {
+  font-size: 12px;
+  color: #f33655;
+}
+
+.saveButton {
+  width: 200px;
+  height: 48px;
+  border-radius: $radius-button;
+  background: $color-text-primary;
+  color: $color-white;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+
+  .content {
+    padding: 24px 20px;
+  }
+
+  .avatar {
+    max-width: 240px;
+    margin: 0 auto 24px;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+}
