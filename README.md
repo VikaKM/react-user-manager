@@ -96,3 +96,8 @@ git clone https://github.com/VikaKM/react-user-manager.git
 cd react-user-manager
 npm install
 npm run dev
+
+## Сслыки
+
+- **GitHub:** https://github.com/VikaKM/react-user-manager
+- **Deploy:** https://vikakm.github.io/react-user-manager/
